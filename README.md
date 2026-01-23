@@ -128,5 +128,5 @@ Data visualizations for this project can be accessed [here](https://lookerstudio
 ## 8. 🔄 Reproduce Project
 
 To reproduce the project and test the code yourself, follow these steps.  
-For a **complete step-by-step guide**, you can access it [here](SetupProject.md).
+For a complete step-by-step guide, you can access it [here](SetupProject.md).
 ---
