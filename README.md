@@ -88,7 +88,6 @@ citibike-data-pipeline/
 │   ├── citibike_to_gcs_2025.py
 │   └── gcs_to_bigquery_2025.py
 ├── dbt_env
-├── images
 ├── .dbt
 │   ├── citibike_dbt_gcp
 │   └── profiles.yml
