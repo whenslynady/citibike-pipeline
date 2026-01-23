@@ -34,7 +34,8 @@ astro/
 .venv/
 venv/
 env/
-dbt_env
+dbt_env/*
+!dbt_env/.gitkeep
 
 # TZ data files (timezone)
 tzdata-*/
