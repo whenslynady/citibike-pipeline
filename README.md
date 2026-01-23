@@ -39,7 +39,6 @@ The dataset includes the following attributes:
 - End longitude  
 - Member or casual rider type
 
----
 
 ## 2. Business Questions
 
@@ -50,7 +49,6 @@ The dataset includes the following attributes:
 5. How does daily trip volume evolve over time?
 6. How do trips compare between members and casual users?
 
----
 
 ## 3. Project Objectives
 
@@ -62,9 +60,6 @@ The objectives of this project are to:
 - Optimize data for analytical queries and performance
 - Build dashboards to visualize key metrics and insights
 
----
-
-
 
 ## 4. 🛠️ Technology Overview
 
@@ -75,12 +70,9 @@ The objectives of this project are to:
 5. **Looker Studio** visualizes insights using the transformed data.  
 
 
----
-
 ## 6. High-Level Architecture
 ![Data Pipeline Architecture](images/data_pipeline.png)
 
----
 
 ## 7. Project Structure
 
@@ -115,14 +107,11 @@ citibike-data-pipeline/
 
 ```
 
----
 ## 7. 📊 Data Visualizations
 
 Data visualizations for this project can be accessed [here](https://lookerstudio.google.com/reporting/8b4b0a39-9df0-4788-83d2-1aa8bd57524f).  
 
 ![Insert Dashboard Screenshot Here](images/dashboard.png)
-
----
 
 
 ## 8. 🔄 Reproduce Project
