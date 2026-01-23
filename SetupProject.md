@@ -3,7 +3,6 @@
 
 > End-to-end Data Engineering pipeline using GCP, Terraform, Astro Airflow, dbt, BigQuery and dashboard
 
----
 
 ## 1️⃣ Prerequisites
 
@@ -17,7 +16,6 @@
   - Anaconda
 - SSH configured for VM access
 
----
 
 ## 2️⃣ Complete Ubuntu Environment Setup
 
@@ -47,8 +45,6 @@ echo $GOOGLE_APPLICATION_CREDENTIALS
 conda info --envs
 ```
 
----
-
 ## 3️⃣ Clone Project & Prepare Credentials
 
 ![Project Structure](images/project_structure.png)
@@ -67,8 +63,6 @@ cp ~/.google/credentials/google_credentials.json \
 ```
 
 > ⚠️ Make sure to add .google/credentials/google_credentials.json to your .gitignore file.
-
----
 
 ## 4️⃣ Prepare Terraform Infrastructure
 
@@ -102,8 +96,6 @@ When it prompts you just type "yes"
 * BigQuery dataset
 * IAM permissions
 
----
-
 ## 6️⃣ Dockerfile Environment Variables
 
 ![Docker ENV](images/docker_env.png)
@@ -118,7 +110,6 @@ ENV BIGQUERY_DATASET="<YOUR_BIGQUERY_DATASET>"
 ENV BUCKET="<YOUR_GCS_BUCKET>"
 
 ```
----
 
 ## 7️⃣ Astro + Airflow Setup
 
@@ -148,13 +139,9 @@ To access Airflow UI locally, you need to forward port 8080 in VS Code:
 * Username: `admin`
 * Password: `admin`
 
----
-
 ## 8️⃣ DAG Architecture Overview
 
 Each stage of the pipeline is orchestrated using a **separate Airflow DAG**, following data engineering best practices.
-
----
 
 ### 🔹 GCS Ingestion DAG
 
@@ -168,8 +155,6 @@ Each stage of the pipeline is orchestrated using a **separate Airflow DAG**, fol
 - Convert CSV → Parquet
 - Upload files to Google Cloud Storage
 
----
-
 ### 🔹 BigQuery Load DAG
 
 ![BigQuery DAG](images/gcs_to_bigquery.png)
@@ -181,8 +166,6 @@ Each stage of the pipeline is orchestrated using a **separate Airflow DAG**, fol
 - Partition tables by date
 - Apply clustering for performance
 - Validate row counts & schemas
-
----
 
 ### 🔹 dbt Transformation DAG
 
@@ -196,8 +179,6 @@ Each stage of the pipeline is orchestrated using a **separate Airflow DAG**, fol
 - Build dimensional & fact tables
 - Produce analytics-ready datasets
 
----
-
 ## 📊 Analytics Reports
 
 Here are the analytics dashboards created for this project:
@@ -208,8 +189,6 @@ https://lookerstudio.google.com/s/m_Iq0vELyYk
 The reports below showcase key insights derived from the CitiBike trip data.  
 You can use the navigation panel on the left side of the dashboard to explore each view.
 
----
-
 ### 📌 Report Tiles Overview
 
 #### 1️⃣ Top 7 Start Stations by Trip Count  
@@ -217,39 +196,24 @@ Shows the most frequently used start stations based on total trip volume.
 
 ![Top 7 Start Stations](images/Top_7_Start_Stations_by_Trip_Count.png)
 
----
-
 #### 2️⃣ Weekly Member vs Casual Trips  
 Compares weekly ride activity between **members** and **casual riders**.
 
 ![Weekly Member vs Casual Trips](images/Weekly_Member_vs_Casual_Trips.png)
-
----
 
 #### 3️⃣ Trips by Category  
 Breakdown of trips by user or ride category to highlight usage patterns.
 
 ![Trips by Category](images/Trips_by_Category.png)
 
----
-
 #### 4️⃣ Daily Trips Trend  
 Displays the daily trend of trips over time to identify peaks and seasonality.
 
 ![Daily Trips Trend](images/Daily_Trips_Trend.png)
-
----
 
 #### 5️⃣ Average Ride Efficiency by Bike Type  
 Bar chart showing average ride efficiency grouped by **bike type**.
 
 ![Average Ride Efficiency by Bike Type](images/Average_Ride_Efficiency_by_Bike_Type.png)
 
----
-
 > 📘 **Note:** All visualizations were built using transformed data from BigQuery and designed in Looker Studio to support analytical decision-making.
-
----
-
-
-
