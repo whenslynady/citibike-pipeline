@@ -2,7 +2,9 @@
 
 ## 1. Problem Description
 
-CitiBike generates a very large volume of trip data every day. Due to the raw, compressed, and unstructured nature of this data, it is not immediately suitable for analysis or reporting. Without proper organization and processing, extracting reliable insights from the data becomes challenging.
+CitiBike generates a large volume of trip data daily. However, this data is stored in raw and compressed formats, making it difficult to analyze directly.
+The goal of this project is to design an end-to-end data pipeline that ingests, processes, and transforms this data into a structured format, enabling efficient analysis.
+A dashboard will be built to provide key insights such as trip trends, station usage, and rider behavior, helping city planners and analysts make data-driven decisions.
 
 
 ## 📅 Data Analysis Period
