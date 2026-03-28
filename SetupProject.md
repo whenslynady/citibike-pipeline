@@ -183,14 +183,6 @@ Each stage of the pipeline is orchestrated using a **separate Airflow DAG**, fol
 
 Here are the analytics dashboards created for this project:
 
-🔗 **Looker Studio Report**  
-https://lookerstudio.google.com/s/m_Iq0vELyYk
-
-The reports below showcase key insights derived from the CitiBike trip data.  
-You can use the navigation panel on the left side of the dashboard to explore each view.
-
-### 📌 Report Tiles Overview
-
 #### 1️⃣ Top 7 Start Stations by Trip Count  
 Shows the most frequently used start stations based on total trip volume.
 
