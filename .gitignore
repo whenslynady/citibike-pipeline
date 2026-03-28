@@ -53,17 +53,10 @@ build/
 .vscode/
 .idea/
 
-
-# =========================
-# Terraform
-# =========================
-
 # Terraform state files
 *.tfstate
 *.tfstate.backup
 *.tfstate.*
-
-# Terraform working directory
 .terraform/
 
 .terraform.lock.hcl
