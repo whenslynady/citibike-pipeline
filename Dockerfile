@@ -97,7 +97,6 @@ ENV GCP_PROJECT_ID="sound-harbor-480119-v8"
 ENV BIGQUERY_DATASET="de_citibike_tripdata_1"
 ENV BUCKET="dtc_data_lake_sound-harbor-480119-v8"
 
-
 # -----------------------------
 # Set working directory
 # -----------------------------
