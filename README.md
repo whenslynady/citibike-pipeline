@@ -110,8 +110,6 @@ citibike-data-pipeline/
 
 ## 7. 📊 Data Visualizations
 
-Data visualizations for this project can be accessed [here](https://lookerstudio.google.com/reporting/8b4b0a39-9df0-4788-83d2-1aa8bd57524f).  
-
 ![Insert Dashboard Screenshot Here](images/dashboard.png)
 
 
