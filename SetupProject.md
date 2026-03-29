@@ -1,5 +1,5 @@
 
-# CitiBike Data Pipeline — Setup Guide (Professional)
+# CitiBike Data Pipeline — Setup Guide
 
 > End-to-end Data Engineering pipeline using GCP, Terraform, Astro Airflow, dbt, BigQuery and dashboard
 
